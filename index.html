@@ -21,13 +21,14 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: rgba(0, 0, 0, 0.85);
+      background: rgba(0, 0, 0, 0.75);
       z-index: -1;
     }
     header {
-      padding: 60px 20px;
+      padding: 60px 20px 20px;
       text-align: center;
-      background: rgba(0,0,0,0.6);
+      background: url('mountain-banner.jpg') no-repeat center center;
+      background-size: cover;
       color: white;
       text-shadow: 2px 2px 8px black;
       position: relative;
@@ -35,17 +36,9 @@
     header img.logo {
       width: 100px;
       border-radius: 50%;
-      position: absolute;
-      top: 20px;
-      left: 20px;
+      display: block;
+      margin: 0 auto 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.8);
-    }
-    @media (max-width: 600px) {
-      header img.logo {
-        position: static;
-        display: block;
-        margin: 0 auto 20px;
-      }
     }
     h1 {
       font-size: 3rem;
@@ -116,6 +109,17 @@
     .scroll-fade.show {
       opacity: 1;
       transform: translateY(0);
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .sub {
+        font-size: 1rem;
+      }
+      header img.logo {
+        width: 80px;
+      }
     }
   </style>
   <script>
